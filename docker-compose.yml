@@ -3,7 +3,7 @@ services:
   customer_service:
     image: .
     restart: always
-    depends:
+    depends_on:
       - mongodb_customer
     ports:
       - 9090:8080
