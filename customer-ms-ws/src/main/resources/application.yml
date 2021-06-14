@@ -12,4 +12,6 @@ logging:
   level:
     org:
       springframework:
-        web: INFO
+        web: DEBUG
+  file:
+    name: ${catalina.base}/logs/message_v1.log
