@@ -1,7 +1,7 @@
-package com.builders.customer.bridge.controller;
+package com.builders.customer.core.controller;
 
-import com.builders.customer.bridge.search.CustomerSearch;
-import com.builders.customer.bridge.to.CustomerTO;
+import com.builders.customer.core.search.CustomerSearch;
+import com.builders.customer.core.to.CustomerTO;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

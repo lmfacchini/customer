@@ -1,15 +1,10 @@
 package com.builders.customer.core.service;
 
-import com.builders.customer.bridge.BusinessException;
-import com.builders.customer.bridge.search.CustomerSearch;
-import com.builders.customer.bridge.service.CustomerService;
-import com.builders.customer.bridge.to.CustomerTO;
+import com.builders.customer.core.BusinessException;
+import com.builders.customer.core.search.CustomerSearch;
+import com.builders.customer.core.to.CustomerTO;
 import com.builders.customer.core.dao.CustomerDAO;
 import com.builders.customer.domain.CustomerVO;
-import org.apache.commons.lang3.StringUtils;
-import org.springframework.data.domain.Sort;
-import org.springframework.data.mongodb.core.query.Criteria;
-import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;

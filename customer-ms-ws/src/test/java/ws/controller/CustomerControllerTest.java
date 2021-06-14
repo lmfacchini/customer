@@ -1,8 +1,8 @@
 package ws.controller;
 
-import com.builders.customer.bridge.search.CustomerSearch;
-import com.builders.customer.bridge.service.CustomerService;
-import com.builders.customer.bridge.to.CustomerTO;
+import com.builders.customer.core.search.CustomerSearch;
+import com.builders.customer.core.service.CustomerService;
+import com.builders.customer.core.to.CustomerTO;
 import com.builders.customer.ws.controller.CustomerControllerImpl;
 import org.apache.commons.lang3.time.DateUtils;
 import org.easymock.EasyMock;

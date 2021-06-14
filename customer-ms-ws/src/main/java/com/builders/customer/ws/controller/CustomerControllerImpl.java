@@ -1,10 +1,10 @@
 package com.builders.customer.ws.controller;
 
-import com.builders.customer.bridge.BusinessException;
-import com.builders.customer.bridge.controller.CustomerController;
-import com.builders.customer.bridge.search.CustomerSearch;
-import com.builders.customer.bridge.service.CustomerService;
-import com.builders.customer.bridge.to.CustomerTO;
+import com.builders.customer.core.BusinessException;
+import com.builders.customer.core.controller.CustomerController;
+import com.builders.customer.core.search.CustomerSearch;
+import com.builders.customer.core.service.CustomerService;
+import com.builders.customer.core.to.CustomerTO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;

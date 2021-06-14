@@ -1,9 +1,8 @@
-package com.builders.customer.bridge.to;
+package com.builders.customer.core.to;
 
-import javax.validation.constraints.Email;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Past;
-import javax.validation.constraints.Size;
+import com.builders.customer.core.utils.AgeCalculator;
+
+import javax.validation.constraints.*;
 import java.io.Serializable;
 import java.util.Date;
 import java.util.Objects;
@@ -25,13 +24,19 @@ public class CustomerTO implements Serializable {
     @Size(min = 3, max = 255)
     private String email;
 
+    @Null
+    private AgeTO age;
+
     public CustomerTO() {
+        setBirth(null);
     }
 
     public CustomerTO(String name, Date birth, String email) {
         this.name = name;
-        this.birth = birth;
+        setBirth(birth);
         this.email = email;
+
+
     }
 
     public String getName() {
@@ -47,6 +52,11 @@ public class CustomerTO implements Serializable {
     }
 
     public void setBirth(Date birth) {
+        if(birth != null){
+            age = AgeCalculator.calculateAge(birth);
+        }else{
+            age = new AgeTO((byte)0, (byte)0, (byte)0);
+        }
         this.birth = birth;
     }
 
@@ -70,4 +80,9 @@ public class CustomerTO implements Serializable {
     public int hashCode() {
         return Objects.hash(email);
     }
+
+    public AgeTO getAge() {
+        return age;
+    }
+
 }

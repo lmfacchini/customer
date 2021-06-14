@@ -1,11 +1,10 @@
 package com.builders.customer.core.dao.impl;
 
-import com.builders.customer.bridge.search.CustomerSearch;
+import com.builders.customer.core.search.CustomerSearch;
 import com.builders.customer.core.dao.CustomerDAO;
 import com.builders.customer.core.repository.CustomerRepository;
 import com.builders.customer.domain.CustomerVO;
 import org.apache.commons.lang3.StringUtils;
-import org.springframework.data.domain.Sort;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;

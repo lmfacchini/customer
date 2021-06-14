@@ -1,11 +1,8 @@
-package core.service;
+package com.builders.customer.core.service;
 
-import com.builders.customer.bridge.search.CustomerSearch;
-import com.builders.customer.bridge.service.CustomerService;
-import com.builders.customer.bridge.to.CustomerTO;
+import com.builders.customer.core.search.CustomerSearch;
+import com.builders.customer.core.to.CustomerTO;
 import com.builders.customer.core.dao.CustomerDAO;
-import com.builders.customer.core.dao.impl.CustomerDAOImpl;
-import com.builders.customer.core.service.CustomerServiceImpl;
 import com.builders.customer.domain.CustomerVO;
 import org.apache.commons.lang3.time.DateUtils;
 import org.easymock.EasyMock;

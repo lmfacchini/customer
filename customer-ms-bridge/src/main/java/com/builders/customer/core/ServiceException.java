@@ -1,4 +1,4 @@
-package com.builders.customer.bridge;
+package com.builders.customer.core;
 
 public class ServiceException extends RuntimeException{
 

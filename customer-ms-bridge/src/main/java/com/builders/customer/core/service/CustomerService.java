@@ -1,7 +1,7 @@
-package com.builders.customer.bridge.service;
+package com.builders.customer.core.service;
 
-import com.builders.customer.bridge.search.CustomerSearch;
-import com.builders.customer.bridge.to.CustomerTO;
+import com.builders.customer.core.search.CustomerSearch;
+import com.builders.customer.core.to.CustomerTO;
 
 import java.util.Set;
 

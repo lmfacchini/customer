@@ -1,7 +1,6 @@
-package core.dao.impl;
+package com.builders.customer.core.dao.impl;
 
-import com.builders.customer.bridge.search.CustomerSearch;
-import com.builders.customer.core.dao.impl.CustomerDAOImpl;
+import com.builders.customer.core.search.CustomerSearch;
 import com.builders.customer.core.repository.CustomerRepository;
 import com.builders.customer.domain.CustomerVO;
 import org.apache.commons.lang3.time.DateUtils;

@@ -1,9 +1,5 @@
-package com.builders.customer.bridge.search;
+package com.builders.customer.core.search;
 
-import javax.validation.constraints.Email;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Past;
-import javax.validation.constraints.Size;
 import java.util.Date;
 
 public class CustomerSearch {

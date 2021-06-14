@@ -1,6 +1,6 @@
 package com.builders.customer.core.dao;
 
-import com.builders.customer.bridge.search.CustomerSearch;
+import com.builders.customer.core.search.CustomerSearch;
 import com.builders.customer.domain.CustomerVO;
 
 import java.util.Set;
