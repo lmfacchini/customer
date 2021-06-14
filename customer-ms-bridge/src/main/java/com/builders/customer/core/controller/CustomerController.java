@@ -12,10 +12,10 @@ import java.util.Collection;
 public interface CustomerController {
 
     @RequestMapping(method = RequestMethod.POST, value = "/create")
-    ResponseEntity<CustomerTO> create(@RequestBody @Valid CustomerTO customer);
+    ResponseEntity<CustomerTO> create(@RequestBody CustomerTO customer);
 
     @RequestMapping(method = RequestMethod.POST, value = "/update")
-    ResponseEntity<CustomerTO> update(@RequestBody @Valid CustomerTO customer);
+    ResponseEntity<CustomerTO> update(@RequestBody CustomerTO customer);
 
     @RequestMapping(method = RequestMethod.DELETE, value = "/delete")
     ResponseEntity<CustomerTO> delete(@PathVariable("email") String email);

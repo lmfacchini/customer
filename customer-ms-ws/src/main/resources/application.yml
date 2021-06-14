@@ -7,11 +7,8 @@ spring:
     mongodb:
       database: customer_v1
       port: 27017
-      host: "172.25.0.2"
 logging:
   level:
     org:
       springframework:
-        web: DEBUG
-  file:
-    name: ${catalina.base}/logs/message_v1.log
+        web: INFO
