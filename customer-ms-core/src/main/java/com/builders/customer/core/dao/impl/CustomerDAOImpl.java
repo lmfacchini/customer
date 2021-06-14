@@ -49,11 +49,11 @@ public class CustomerDAOImpl implements CustomerDAO {
     public Set<CustomerVO> list(CustomerSearch search) {
         Criteria criteria = Criteria.where("id").exists(true);
         if(StringUtils.isNotBlank(search.getEmail())){
-            criteria = criteria.and("email").regex(String.format(".*%s.*"));
+            criteria = criteria.and("email").regex(String.format(".*%s.*", search.getEmail()));
         }
 
         if(StringUtils.isNotBlank(search.getName())){
-            criteria = criteria.and("name").regex(String.format(".*%s.*"));
+            criteria = criteria.and("name").regex(String.format(".*%s.*", search.getName()));
         }
 
         if(search.getBirth() != null){

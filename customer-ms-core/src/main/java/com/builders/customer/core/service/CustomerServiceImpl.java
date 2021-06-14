@@ -34,7 +34,7 @@ public class CustomerServiceImpl implements CustomerService {
         }
         vo = parse(customer);
         vo = dao.save(vo);
-        return null;
+        return parse(vo);
     }
 
     @Override
