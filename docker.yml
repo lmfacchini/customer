@@ -1,0 +1,19 @@
+version: "3.7"
+services:
+  customer_service:
+    image: mongo
+      restart: always
+      ports:
+        - 27017:27017
+        - 8080:8080
+      volumes:
+        - mongodb:/data/db
+        - mongoconfig:/data/configdb
+      command:
+        - bash
+        - -c
+        - >
+          apt-get update;
+          apt-get install git maven -y;
+          git clone https://github.com/lmfacchini/customer.git;
+          mvn clean install spring-boot:run
