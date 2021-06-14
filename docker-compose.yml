@@ -6,9 +6,6 @@ services:
     ports:
       - 27017:27017
       - 8080:8080
-    volumes:
-      - mongodb:/data/db
-      - mongoconfig:/data/configdb
     command:
       - bash -c
       - apt-get update;
