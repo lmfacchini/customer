@@ -4,7 +4,7 @@ services:
     image: .
     restart: always
     depends:
-      - mongodb
+      - mongodb_customer
     ports:
       - 9090:8080
     command:
@@ -12,7 +12,7 @@ services:
       - apt install git maven -y;
       - git clone https://github.com/lmfacchini/customer.git;
       - mvn clean install spring-boot:run
-  mongodb:
+  mongodb_customer:
     image: mongo
     ports:
       - 27018:27017
