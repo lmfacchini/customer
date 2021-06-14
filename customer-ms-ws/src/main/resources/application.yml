@@ -7,4 +7,4 @@ spring:
     mongodb:
       database: customer_v1
       port: 27018
-      host: localhost
+      host: 172.24.0.1
