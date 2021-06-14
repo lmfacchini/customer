@@ -59,6 +59,9 @@ public class CustomerControllerImpl implements CustomerController {
     @Override
     public ResponseEntity<Collection<CustomerTO>> list(CustomerSearch search) {
         try{
+            if(search == null){
+                search = new CustomerSearch();
+            }
             return ResponseEntity.ok(service.list(search));
         }catch (BusinessException ex){
             LOGGER.error("CustomerController", ex);

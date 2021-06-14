@@ -15,6 +15,10 @@ public class CustomerSearch {
 
     private int size;
 
+    public CustomerSearch() {
+        size = Integer.MAX_VALUE;
+    }
+
     public int getStart() {
         return start;
     }

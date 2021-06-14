@@ -21,5 +21,5 @@ public interface CustomerController {
     ResponseEntity<CustomerTO> delete(@PathVariable("email") String email);
 
     @RequestMapping(method = RequestMethod.GET, value = "/list")
-    ResponseEntity<Collection<CustomerTO>> list(@RequestParam CustomerSearch search);
+    ResponseEntity<Collection<CustomerTO>> list(@RequestParam(required = false) CustomerSearch search);
 }
