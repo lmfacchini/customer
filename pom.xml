@@ -6,6 +6,7 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.5.1</version>
+        <relativePath/>
     </parent>
     <groupId>com.builders.customer</groupId>
     <artifactId>customer</artifactId>
