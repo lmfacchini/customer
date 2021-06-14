@@ -6,4 +6,5 @@ spring:
   data:
     mongodb:
       database: customer_v1
+      port: 27018
       host: localhost
