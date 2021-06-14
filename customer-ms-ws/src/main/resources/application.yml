@@ -1,20 +1,9 @@
+server:
+  servlet:
+    context-path: /customer_v1
+  port: 8080
 spring:
   data:
     mongodb:
-      database: message_v1
-      host: kami
-      username: leomf
-      password: lmf460
-  activemq:
-    broker-url: tcp://kami:61616
-logging:
-  level:
-    org: DEBUG
-security:
-  oauth2:
-    client:
-      clientId: stinen_246
-      clientSecret: 5tUVnHA2utYNBCUh
-      accessTokenUri: http://kami:8080/auth_v1/oauth/token
-    resource:
-      tokenInfoUri: http://kami:8080/auth_v1/oauth/check_token
+      database: customer_v1
+      host: localhost
