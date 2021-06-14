@@ -6,8 +6,8 @@ spring:
   data:
     mongodb:
       database: customer_v1
-      port: 27018
-      host: 172.24.0.1
+      port: 27017
+      host: "172.25.0.2"
 logging:
   level:
     org:
