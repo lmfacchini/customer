@@ -1,0 +1,193 @@
+{
+	"info": {
+		"_postman_id": "b518df2b-01cb-46f3-8d75-c4372087cdaa",
+		"name": "none",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:9090/customer_v1/customer/list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/customer_v1/customer/list?name=rquini&start=0&size=10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"customer_v1",
+						"customer",
+						"list"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "rquini"
+						},
+						{
+							"key": "start",
+							"value": "0"
+						},
+						{
+							"key": "size",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:9090/customer_v1/customer/list",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/customer_v1/customer/list?name=rquini&start=0&size=10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"customer_v1",
+								"customer",
+								"list"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "rquini"
+								},
+								{
+									"key": "start",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 15 Jun 2021 00:06:26 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=20"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"name\": \"Leonardo Marquini Facchini xxxx\",\n        \"birth\": \"1983-08-03T00:00:00.296+00:00\",\n        \"email\": \"lmfacchini@gmail.com\",\n        \"age\": {\n            \"days\": 12,\n            \"months\": 10,\n            \"years\": 37\n        }\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:9090/customer_v1/customer/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Leonardo Marquini Facchini\",\n    \"birth\": \"1983-08-03T00:00:00.296+00:00\",\n    \"email\": \"lmfacchini@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/customer_v1/customer/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"customer_v1",
+						"customer",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9090/customer_v1/customer/delete?email=lmfacchini@gmail.com",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/customer_v1/customer/delete?email=lmfacchini@gmail.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"customer_v1",
+						"customer",
+						"delete"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "lmfacchini@gmail.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9090/customer_v1/customer/update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Leonardo Marquini Facchini xxxx\",\n    \"birth\": \"1983-08-03T00:00:00.296+00:00\",\n    \"email\": \"lmfacchini@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/customer_v1/customer/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"customer_v1",
+						"customer",
+						"update"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
