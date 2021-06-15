@@ -18,7 +18,7 @@ public interface CustomerController {
     ResponseEntity<CustomerTO> update(@RequestBody CustomerTO customer);
 
     @RequestMapping(method = RequestMethod.DELETE, value = "/delete")
-    ResponseEntity<CustomerTO> delete(@PathVariable("email") String email);
+    ResponseEntity<CustomerTO> delete(@RequestParam("email") String email);
 
     @RequestMapping(method = RequestMethod.GET, value = "/list")
     ResponseEntity<Collection<CustomerTO>> list(@RequestParam(required = false) CustomerSearch search);
